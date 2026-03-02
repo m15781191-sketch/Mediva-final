@@ -1,0 +1,281 @@
+.footer {
+    background: linear-gradient(to bottom, rgba(140, 85, 50, 1) 0%, rgba(110, 65, 35, 1) 100%);
+    color: #FDF4E9;
+    padding: 40px 16px 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "TT Runs Trial", sans-serif;
+}
+
+/* ===== LOGO ===== */
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    object-fit: contain;
+}
+
+.rights {
+    font-family: "TT Runs Trial", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    opacity: 0.8;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 32px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #FDF4E9;
+    font-family: "TT Runs Trial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s;
+    line-height: 1.2;
+    padding: 6px 0;
+}
+
+.navLink:hover {
+    opacity: 1;
+}
+
+/* ===== BRANCHES ===== */
+.branches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 40px;
+}
+
+.branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 4px;
+}
+
+.branchTitle {
+    font-family: "TT Runs Trial", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #FDF4E9;
+    opacity: 1;
+}
+
+.branchInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: "TT Runs Trial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: #FDF4E9;
+    opacity: 1;
+}
+
+.branchInfo p {
+    margin: 0;
+}
+
+.phoneGroup {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.telegram {
+    margin-top: 10px;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+    width: 90%;
+    max-width: 1200px;
+    height: 1px;
+    background-color: #FDF4E9;
+    margin-bottom: 24px;
+    opacity: 0.2;
+}
+
+/* ===== SOCIAL ===== */
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.socialText {
+    font-family: "TT Runs Trial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    opacity: 1;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+.iconLink {
+    color: #FDF4E9;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.iconLink:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .footer {
+        padding: 60px 24px 32px;
+    }
+
+    .logoContainer {
+        margin-bottom: 32px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 80px;
+    }
+
+    .rights {
+        font-size: 13px;
+    }
+
+    .nav {
+        gap: 8px;
+        margin-bottom: 48px;
+    }
+
+    .navLink {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .branches {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .branch {
+        width: 487px;
+    }
+
+    .branchTitle {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .branchInfo {
+        font-size: 14px;
+    }
+
+    .divider {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .socialContainer {
+        gap: 20px;
+    }
+
+    .icons {
+        gap: 32px;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .footer {
+        padding: 80px 0 40px;
+    }
+
+    .logoContainer {
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        width: 130px;
+        height: 90px;
+    }
+
+    .rights {
+        font-size: 14px;
+    }
+
+    .nav {
+        margin-bottom: 60px;
+    }
+
+    .branches {
+        margin-bottom: 80px;
+    }
+
+    .branchTitle {
+        font-size: 24px;
+        letter-spacing: 0.12em;
+    }
+
+    .divider {
+        margin-bottom: 40px;
+    }
+
+    .socialContainer {
+        gap: 24px;
+    }
+
+    .socialText {
+        font-size: 14px;
+    }
+
+    .icons {
+        gap: 36px;
+    }
+}

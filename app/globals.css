@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #E6D7C8;
+  --foreground: #8B6D5A;
+  --muted: #A89F91;
+  --accent: #8B6D5A;
+  --card: #F2E8E1;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #8B6D5A;
+  font-family: "TT Runs Trial Variable Roman", 'Outfit', sans-serif;
+  overflow-x: hidden;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blur-in {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* TT Runs Trial Fonts */
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

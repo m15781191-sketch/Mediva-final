@@ -1,0 +1,147 @@
+/* ===== SECTION ===== */
+.section {
+    background-color: #E6D7C8;
+    /* Matches other sections */
+    width: 100%;
+    padding: 100px 0 120px;
+}
+
+.container {
+    max-width: 1728px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* ===== TITLE ===== */
+.title {
+    font-family: "TT Runs Trial Variable Roman", "TT Runs Trial", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(125, 95, 85, 1);
+    text-align: center;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 800px;
+    /* Slightly wider to ensure single line */
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+    align-items: start;
+    justify-items: center;
+}
+
+/* ===== CARD ===== */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 490px;
+}
+
+/* ===== IMAGE ===== */
+.imageWrapper {
+    width: 286px;
+    height: 286px;
+    border-radius: 143px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    /* Premium shadow */
+}
+
+.image {
+    object-fit: cover;
+}
+
+/* ===== NAME ===== */
+.name {
+    font-family: "TT Runs Trial Variable Roman", "TT Runs Trial", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 8px;
+    width: auto;
+    /* Changed from 322px to auto to handle varying name lengths */
+    min-width: 322px;
+    white-space: nowrap;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== DESCRIPTION ===== */
+.description {
+    font-family: "TT Runs Trial Variable Roman", "TT Runs Trial", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: rgba(140, 85, 50, 1);
+    text-align: center;
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    min-height: 192px;
+    margin: 0 auto;
+}
+
+/* ===== TABLET ADJUSTMENTS ===== */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+/* ===== DESKTOP ADJUSTMENTS ===== */
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        max-width: 1534px;
+        /* (490 * 3) + (32 * 2) = 1534 */
+        margin: 0 auto;
+    }
+}
+
+/* ===== TABLET/MOBILE ADJUSTMENTS ===== */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .title {
+        font-size: 28px;
+        letter-spacing: 0.15em;
+        margin-bottom: 48px;
+    }
+}

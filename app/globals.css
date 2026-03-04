@@ -95,3 +95,35 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Runs Trial";
+  src: url("/images/fonts/tt-runs/TT Runs Trial Variable Roman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

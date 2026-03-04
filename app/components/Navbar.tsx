@@ -88,7 +88,8 @@ export default function Navbar() {
                     transition={{ duration: 1, delay: 0.1 }}
                     className="absolute z-20 pointer-events-none hidden md:flex items-center justify-center"
                     style={{
-                        left: '818px',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
                         top: '14px',
                         width: '91px',
                         height: '68px'

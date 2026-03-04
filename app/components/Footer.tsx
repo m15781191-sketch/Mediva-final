@@ -22,9 +22,15 @@ export default function Footer() {
 
             {/* Navigation Links */}
             <nav className={styles.nav}>
-                {["О нас", "Услуги", "Блог", "Франшиза", "Контакты"].map((item) => (
-                    <a key={item} href="#" className={styles.navLink}>
-                        {item}
+                {[
+                    { label: "О нас", id: "about" },
+                    { label: "Услуги", id: "services" },
+                    { label: "Блог", id: "blog" },
+                    { label: "Франшиза", id: "franchise" },
+                    { label: "Контакты", id: "footer" }
+                ].map((item) => (
+                    <a key={item.id} href={`#${item.id}`} className={styles.navLink}>
+                        {item.label}
                     </a>
                 ))}
             </nav>
@@ -71,16 +77,16 @@ export default function Footer() {
             <div className={styles.socialContainer}>
                 <p className={styles.socialText}>Подписывайтесь на нас в социальных сетях</p>
                 <div className={styles.icons}>
-                    <a href="#" className={styles.iconLink}>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <Instagram size={24} strokeWidth={1} />
                     </a>
-                    <a href="#" className={styles.iconLink}>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <Facebook size={24} strokeWidth={1} />
                     </a>
-                    <a href="#" className={styles.iconLink}>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <Youtube size={24} strokeWidth={1} />
                     </a>
-                    <a href="#" className={styles.iconLink}>
+                    <a href="https://t.me/MedivaDarhan" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <Send size={24} strokeWidth={1} />
                     </a>
                 </div>
